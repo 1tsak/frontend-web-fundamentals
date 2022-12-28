@@ -21,6 +21,10 @@ body {
   transition: transform 0.5s linear;
 }
 
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
 .container.show-nav {
   transform: rotate(-20deg);
 }
