@@ -1,3 +1,7 @@
-const search = document.getElementById("search");
-const searchCont = document.querySelector(".search-container");
-search.addEventListener("click", () => searchCont.classList.add("show"));
+const search = document.querySelector(".search");
+const btn = document.querySelector(".btn");
+const input = document.querySelector(".input");
+btn.addEventListener("click", () => {
+  search.classList.toggle("active");
+  input.focus();
+});
