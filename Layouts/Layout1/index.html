@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+</head>
+<style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #logo {
+        width: 100%;
+        min-height: 50px;
+        background-color: lightgray;
+        padding-left: 2%;
+        line-height: 50px;
+    }
+
+    #nav {
+        width: 100%;
+        background-color: lightgray;
+        min-height: 30px;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    #header-banner {
+        width: 100%;
+        margin-top: 10px;
+        min-height: 100px;
+        background-color: lightgray;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    #main {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #sidebar {
+        width: 20%;
+        min-height: 400px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 400px;
+        float: left;
+    }
+
+    #body-area {
+        width: 75%;
+        min-height: 400px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 400px;
+        float: right;
+    }
+
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #footer {
+        width: 100%;
+        min-height: 50px;
+        background-color: lightgray;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+
+    #wrapper {
+        width: 80%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <div id="wrapper">
+
+        <div id="logo">Logo</div>
+        <div id="nav">Navigation</div>
+        <div id="header-banner">Header/Banner</div>
+        <div id="main" class="clearfix">
+            <div id="sidebar">Side Bar</div>
+            <div id="body-area">Body Area</div>
+        </div>
+        <div id="footer">Footer</div>
+    </div>
+</body>
+
+</html>
